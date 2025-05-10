@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Cat Heaven'
+      title: 'Yoga Center'
     }
   },
   compatibilityDate: '2024-11-01',
