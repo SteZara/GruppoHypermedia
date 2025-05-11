@@ -8,6 +8,7 @@
     <header_content />
   </header>
   <main>
+    <!-- <breadcrumb/> -->
     <NuxtPage/>
   </main>
   <footer>
@@ -16,11 +17,20 @@
 </template>
 
 <style scoped>
-main {
+
+main{
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; 
+
+  /* scrollbar-width: none; */
 }
 
 header {
+  top: 0;
+  position: sticky;
+
   display: flex;    
   align-items: center;
   justify-content: space-between;

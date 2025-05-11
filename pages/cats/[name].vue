@@ -1,23 +1,23 @@
 <script setup lang="ts">
-const route = useRoute()
+// const route = useRoute()
 
-const store = useCatsStore()
-callOnce('cats',()=>store.fetch())
-const cat = store.byName(route.params.name as string)
-useSeoMeta({
-  title: cat.name
-})
+// const store = useCatsStore()
+// callOnce('cats',()=>store.fetch())
+// const cat = store.byName(route.params.name as string)
+// useSeoMeta({
+//   title: cat.name
+// })
 </script>
 
 <template>
-  <section class="hero" :style="{ backgroundImage: `url(${cat.img})` }">
+  <!-- <section class="hero" :style="{ backgroundImage: `url(${cat.img})` }">
     <h2>{{cat.name}}</h2>
   </section>
-  <p>{{cat.description}}</p>
+  <p>{{cat.description}}</p> -->
 </template>
 
 <style scoped>
-.hero {
+/* .hero {
   background: no-repeat center center/cover;
   height: 400px;
   display: flex;
@@ -37,5 +37,5 @@ p{
   width: 75%;
   text-align: center;
   margin: 20px auto;
-}
+} */
 </style>

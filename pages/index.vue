@@ -18,9 +18,8 @@
 </script>
 
 <template>
-  <section>
-    <h1>Home page</h1>
-  </section>
+  <breadcrumb/>
+  <h1>Home page</h1>
   <!-- Hero Section -->
   <!--<section class="hero">
     <h2>Discover the Purrfect Companion!</h2>
