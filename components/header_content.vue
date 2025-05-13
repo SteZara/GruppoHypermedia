@@ -5,7 +5,7 @@
     <div id="top_bar_nav">
         <nav>
             <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/activities">Activities</NuxtLink>
+            <NuxtLink to="/courses">Courses</NuxtLink>
             <NuxtLink to="/teachers">Teachers</NuxtLink>
             <NuxtLink to="/about">About us</NuxtLink>
         </nav>
