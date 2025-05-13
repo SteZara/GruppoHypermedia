@@ -1,4 +1,35 @@
-<script setup lang="ts">
+<script setup>
+import { onMounted, ref, onBeforeMount } from 'vue';
+
+const isScrolled = ref(false);
+var header_div = null;
+const handleScroll = () => {
+    if (window.scrollY > 0) {
+        // console.log('scrolled');
+        isScrolled.value = true;
+        header_div?.setAttribute('isScrolled', isScrolled.value.toString());
+    } else {
+        isScrolled.value = false;
+        header_div?.setAttribute('isScrolled', isScrolled.value.toString());
+        // isScrolled.value = false;
+    }
+};
+onBeforeMount(() => {
+  // Check if the page is already scrolled on mount
+  header_div = document.querySelector('header'); 
+  header_div.setAttribute('isScrolled', isScrolled.value.toString());
+});
+onMounted(() => {
+  header_div = document.querySelector('header'); 
+  // header_div?.setAttribute('isScrolled', isScrolled.value.toString());
+  // isScrolled: false;
+
+  window.addEventListener('scroll', handleScroll);
+  // Cleanup the event listener when the component is unmounted
+  return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
+});
 
 </script>
 
@@ -32,12 +63,26 @@ header {
   position: sticky;
 
   display: flex;    
+  max-height: 100px;
   align-items: center;
   justify-content: space-between;
 
-  background-color: var(--azure);
-  padding: 5px;
+  backdrop-filter: blur(10px);
+  background-color: var(--azure-transparent); 
+
+  /* opacity: 0.8; */
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+  padding: 2px;
   text-align: center;
+
+  transition: 0.2s;
+}
+
+header[isScrolled='true'] {
+  transition: 0.2s;
+  /* max-height: 20px; */
+  /* background-color: var(--azure); */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {

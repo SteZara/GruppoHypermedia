@@ -7,6 +7,7 @@
 
 :root{
     --azure: #B8F6FF;
+    --azure-transparent: #b8f6ff6c; /*rgba(184, 246, 255, 0.5);*/
     --background-color: #F8F8F6; 
     --name-color: #0E5C63; 
 }
@@ -24,7 +25,6 @@ html, body, #__nuxt{
     color: rgb(36, 36, 36);
     font-family: 'Source Sans Pro',sans-serif;
     scrollbar-width: 0;
-    overflow-x: hidden;
 }
 
 a{
