@@ -1,3 +1,7 @@
+<script setup lang="ts">
+var isMobile =  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator?.userAgent); 
+</script>
+
 <template>
     <breadcrumb />
     <div id="founders_div">
@@ -50,16 +54,23 @@ figcaption {
 }
 
 .founders_images {
-    width: 50vw;
+    /* width: 50vw; */
     display: flex;
-    justify-content: space-between;
-    /* gap: auto; */
+    justify-content:space-evenly;
+    gap: 20px;
 }
 .founders_images img {
-    width: 100px;
-    height: 100px;
+    justify-self: center;
+    max-width: 100px;
+    max-height: 100px;
+    width: 10vmax;
+    height: 10vmax;
     border-radius: 50%;
     object-fit: cover;
+}
+figure {
+     /* display: block; */
+     margin: 0; 
 }
 
 #founders_div {

@@ -24,7 +24,7 @@ main{
   flex-direction: column;
   padding: 10px; 
 
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
 }
 
 header {

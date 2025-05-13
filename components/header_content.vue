@@ -25,9 +25,21 @@ import logo from "../public/center_logo.png";
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+nav a {
+    width: 4em;
+    transition: 0.3s;
+}
+
+nav>a:hover {
+    color: #0e5c63;
+    font-weight: 900;
+    /* transition: 1s; */
+    /* font-size: large; */
 }
 
 #top_bar_search {
