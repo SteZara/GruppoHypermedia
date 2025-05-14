@@ -76,6 +76,7 @@ header {
   text-align: center;
 
   transition: 0.2s;
+  z-index: 2;
 }
 
 header[isScrolled='true'] {

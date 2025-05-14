@@ -1,35 +1,37 @@
 <template>
   <div class="index-container">
-    <div class="main-image">
-      <img src="/center/yoga_sunset.jpg" alt="Yoga meditazione" />
-    </div>
+    <div class="circle-menu-container">
+      <div class="main-image">
+        <img src="/center/yoga_sunset.jpg" alt="Yoga meditazione" />
+      </div>
 
-    <div class="icon-link top-left">
-      <NuxtLink to="/about">
-        <img src="/icons/about.png" alt="About Icon" />
-        <span>about us</span>
-      </NuxtLink>
-    </div>
+      <div class="icon-link top-left">
+        <NuxtLink to="/about">
+          <img src="/icons/about.png" alt="About Icon" />
+          <span>about us</span>
+        </NuxtLink>
+      </div>
 
-    <div class="icon-link top-right">
-      <NuxtLink to="/careers">
-        <img src="/icons/career.png" alt="Careers Icon" />
-        <span>careers</span>
-      </NuxtLink>
-    </div>
+      <div class="icon-link top-right">
+        <NuxtLink to="/careers">
+          <img src="/icons/career.png" alt="Careers Icon" />
+          <span>careers</span>
+        </NuxtLink>
+      </div>
 
-    <div class="icon-link bottom-left">
-      <NuxtLink to="/teachers">
-        <img src="/icons/teachers.png" alt="Teachers Icon" />
-        <span>instructors</span>
-      </NuxtLink>
-    </div>
+      <div class="icon-link bottom-left">
+        <NuxtLink to="/teachers">
+          <img src="/icons/teachers.png" alt="Teachers Icon" />
+          <span>instructors</span>
+        </NuxtLink>
+      </div>
 
-    <div class="icon-link bottom-right">
-      <NuxtLink to="/activities">
-        <img src="/icons/activity.png" alt="Activity Icon" />
-        <span>activity</span>
-      </NuxtLink>
+      <div class="icon-link bottom-right">
+        <NuxtLink to="/activities">
+          <img src="/icons/activity.png" alt="Activity Icon" />
+          <span>activity</span>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +42,10 @@
 
 <style scoped>
 .index-container {
+  z-index: 0;
+}
+
+.circle-menu-container {
   position: relative;
   height: calc(100vh - 160px);
   display: flex;
