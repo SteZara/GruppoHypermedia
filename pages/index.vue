@@ -3,7 +3,7 @@
   <div class="index-container">
     <div class="circle-menu-container">
       <section class="hero-section">
-        <img src="/center/yoga_sunset.png" alt="Yoga meditazione" class="main-image" />
+        <img src="/center/yoga_sunset.jpg" alt="Yoga meditazione" class="main-image" />
 
         <div class="icon-link top-left">
           <NuxtLink to="/about">
